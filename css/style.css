@@ -9,22 +9,27 @@ body {
 .hero-image { 
     position: relative;
   text-align: center;
+  height: 90%;
   }
 
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #c70808;
-    font-family: 'Smooch', cursive;
-  }
-
-  .hero-text>h1 {
-    font-size: 120px;
+  h1 {
+    font-family: 'Inspiration', cursive;
+    font-size: 200px;
   }
 
   .navbar {
       height: 100px;
       background: #fff;
   }
+
+  a.nav-link {
+    color: #000;
+
+  }
+ li.nav-item {
+   padding: 0 30px;
+ }
+
+ h3 {
+  font-family: 'Inspiration', cursive;
+ }
