@@ -1,0 +1,17 @@
+[
+ {
+   "genre": "classical",
+   "title": " Canon",
+   "composer": " Pachelbel"
+ },
+ {
+   "genre": "pop",
+   "title": " Titanium",
+   "composer": " Sia"
+ },
+ {
+   "genre": "Jazz",
+   "title": " A Foggy Day",
+   "composer": " Gershwin"
+ }
+]
