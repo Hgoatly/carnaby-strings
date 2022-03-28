@@ -5,6 +5,11 @@
    "composer": " Pachelbel"
  },
  {
+  "genre": "classical",
+  "title": " Air",
+  "composer": "J.S. Bach"
+},
+ {
    "genre": "pop",
    "title": " Titanium",
    "composer": " Sia"
