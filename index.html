@@ -17,7 +17,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    
+    <meta content="Wedding and Background music String Quartet" name="Description">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('lK_G_FgJcPOf8ddn7');
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('service_dh6h8mf', 'template_wg21w8w', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                      alert("Your enquiry has been sent.")
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                      alert("There has been an error.")
+                  });
+          });
+          return false;
+      }
+  </script>
     <title>Carnaby Strings</title>
   </head>
   <body>
@@ -118,7 +144,7 @@
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                   <button
-                    class="btn btn-link"
+                    class="btn btn-link stretched-link"
                     data-toggle="collapse"
                     data-target="#collapseOne"
                     aria-expanded="false"
@@ -261,19 +287,20 @@
       </div>
       <hr width="50%" class="mt-0" />
       <div class="row justify-content-center">
-			<!--Form example copied and adapted from the CI Resume project-->
+			
 			<div class="center-form col-8">
-				<form id="contact-form" name="contact-form" onsubmit="return sendMail(this);">
-					<input class="form-control" id="fullname" name="name" placeholder="Name" type="text" required=""> <input class="form-control" id="emailaddress" name="emailaddress" placeholder="Email" type="email" required=""> 
-					<textarea class="form-control" id="enquiry" name="enquiry" placeholder="Your enquiry" required="" rows="5"></textarea>
-					<div class="row">
-						<div class="col-12 text-center">
-							<div class="row justify-content-center">
-								<button class="btn form-button center-block" id="submit-button" type="submit">Submit</button>
-							</div>
-						</div>
-					</div>
-				</form>
+				<body>
+          <form id="contact-form">
+            <input type="hidden" name="contact_number">
+              <label>Name</label>
+              <input type="text" name="user_name" id="name">
+              <label>Email</label>
+              <input type="email" name="user_email" id="email">
+              <label>Message</label>
+              <textarea name="message" id="enquiry"></textarea>
+              <input type="submit" value="Send">
+          </form>
+      </body>
 			</div>
 		</div><!--End of copied code-->
     </div>
@@ -285,6 +312,7 @@
     ></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="module" src="assets\js\script.js"></script>
+    <script type="module" src="assets\js\sendmail.js"></script>
     </script> 
   </body>
 </html>
