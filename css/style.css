@@ -1,44 +1,43 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
 
-.hero-image { 
-    position: relative;
+.hero-image {
+  position: relative;
   text-align: center;
   height: 90%;
-  }
+}
 
-  h1 {
-    font-family: 'Inspiration', cursive;
-    font-size: 200px;
-  }
+h1 {
+  font-family: "Inspiration", cursive;
+  font-size: 200px;
+}
 
-  .navbar {
-      height: 100px;
-      background: #fff;
-  }
+.navbar {
+  height: 100px;
+  background: #fff;
+}
 
-  a.nav-link {
-    color: #000;
+a.nav-link {
+  color: #000;
+}
+li.nav-item {
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+}
 
-  }
- li.nav-item {
-   padding: 0 30px;
-   font-family: 'Roboto', sans-serif;
- }
+.navbar-nav {
+  background: #fff;
+}
 
- .navbar-nav {
-   background: #fff;
- }
-
- h3 {
-  font-family: 'Inspiration', cursive;
+h3 {
+  font-family: "Inspiration", cursive;
   font-size: 50px;
- }
+}
 
 .card {
   border-radius: 0;
@@ -50,24 +49,82 @@ body {
   background-color: #fff;
 }
 
- .btn.btn-link {
-   color:#000;
-   text-decoration: none;
- }
+.btn.btn-link {
+  color: #000;
+  text-decoration: none;
+}
 
- table {
-   min-width: 100%;
- }
+table {
+  min-width: 100%;
+}
 
 .th-row {
   background-color: #f2f2f2;
 }
 
-td, th {
-  width: 50%;
+li {
+  width: 100%;
 }
 
-#classical tbody:nth-child(even){background-color: #f2f2f2;}
+td {
+  width: 50% !important;
+}
+
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable,
+#musicals-and-jazz,
+#pop,
+#bollywood {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th,
+#myTable td,
+#musicals-and-jazz th,
+#musicals-and-jazz td,
+#pop td,
+#bollywood th,
+#bollywood td {
+  text-align: left; /* Left-align text */
+  padding: 12px !important; /* Add padding */
+}
+
+#myTable tr,
+#musicals-and-jazz tr,
+#pop tr,
+#bollywood tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover,
+#musicals-and-jazz tr.header,
+#musicals-and-jazz tr:hover,
+#pop tr.header,
+#pop tr:hover,
+#bollywood tr.header,
+#bollywood tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+#classical tbody:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 @media only screen and (max-width: 992px) {
   h1 {
@@ -75,9 +132,8 @@ td, th {
   }
 }
 
- @media only screen and (max-width: 600px) {
-   h1 {
-     font-size: 75px;
-   }
- }
- 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 75px;
+  }
+}

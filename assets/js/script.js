@@ -10,79 +10,82 @@ import data from "/assets/csv/repertoire.json" assert { type: "json" };
 
 // console.log(repertoireList);
 
-
 // data.forEach(function(obj) { console.log(obj.title);
-    
+
 // });
 
-const classical = document.querySelector('#classical');
+const myTable = document.querySelector("#myTable");
 
-data.forEach(item => {
-    if (item.genre === "classical") {
-  classical.innerHTML += `
+data.forEach((item) => {
+  if (item.genre === "classical") {
+    myTable.innerHTML += `
   
-  <tr>
-    <td>
+    <tr class="songs">
+    <td class="title">
         ${item.title}
     </td>
-    <td>
+    <td class="composer">
     ${item.composer}
     </td>
     </tr>
-
-  `};
+  
+  `;
+  }
 });
 
-const musicalsAndJazz = document.querySelector('#musicals-and-jazz');
+const musicalsAndJazz = document.querySelector("#musicals-and-jazz");
 
-data.forEach(item => {
-    if (item.genre === "Jazz" || item.genre === "musicals") {
-        musicalsAndJazz.innerHTML += `
+data.forEach((item) => {
+  if (item.genre === "Jazz" || item.genre === "musicals") {
+    musicalsAndJazz.innerHTML += `
   
-  <tr>
-    <td>
+    <tr class="songs">
+    <td class="title">
         ${item.title}
     </td>
-    <td>
+    <td class="composer">
     ${item.composer}
     </td>
     </tr>
 
-  `};
+  `;
+  }
 });
 
-const pop = document.querySelector('#pop');
+const pop = document.querySelector("#pop");
 
-data.forEach(item => {
-    if (item.genre === "pop") {
-        pop.innerHTML += `
+data.forEach((item) => {
+  if (item.genre === "pop") {
+    pop.innerHTML += `
   
-  <tr>
-    <td>
+    <tr class="songs">
+    <td class="title">
         ${item.title}
     </td>
-    <td>
+    <td class="composer">
     ${item.composer}
     </td>
     </tr>
 
-  `};
+  `;
+  }
 });
 
-const bollywood = document.querySelector('#bollywood');
+const bollywood = document.querySelector("#bollywood");
 
-data.forEach(item => {
-    if (item.genre === "Bollywood") {
-        bollywood.innerHTML += `
+data.forEach((item) => {
+  if (item.genre === "Bollywood") {
+    bollywood.innerHTML += `
   
-  <tr>
-    <td>
+    <tr class="songs">
+    <td class="title">
         ${item.title}
     </td>
-    <td>
+    <td class="composer">
     ${item.composer}
     </td>
     </tr>
 
-  `};
+  `;
+  }
 });
