@@ -53,6 +53,8 @@
           <h1>Carnaby Strings</h1>
         </div>
       </div>
+
+<!-- Navbar -->
       <div class="row sticky-top">
         <div class="col-12 justify-content-center">
           <nav class="navbar navbar-expand-lg">
@@ -95,6 +97,9 @@
           </nav>
         </div>
       </div>
+
+<!-- End of Navbar -->
+<!-- About section -->
       <div class="row">
         <div class="col-12">
           <div class="hero-image">
@@ -122,6 +127,9 @@
         </div>
       </div>
  
+<!-- End of About section -->
+<!-- Watch section -->
+
       <hr width="50%" class="mt-0" />
       <div id="watch" class="row">
         <div class="col-12 justify-content-center">
@@ -137,6 +145,8 @@
         </video>
       </div>
 
+<!-- End of Watch section -->
+<!-- Repertoire section -->
       <hr width="50%" class="mt-0" />
       <div id="repertoire" class="row">
         <div class="col-12 justify-content-center">
@@ -150,22 +160,48 @@
           
         </div>
       </div>
-      <input id="myInput" onkeyup="searchMusic()" type="text"
+
+
+<!-- Repertoire accordion -->
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          View our Repertoire
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <input id="myInput" onkeyup="searchMusic()" type="text"
       name="search" placeholder="Search our repertoire..">
         <div id="myUL">
 
-        <table id="myTable">
-          <tr class="header">
+          <table><tr class="header">
             <th>Title</th>
             <th>Composer</th>
-          </tr>
+            <th>Genre</th>
+          </tr></table>
+        <table id="myTable">
+          
         
         <table id="musicals-and-jazz"></table>
       <table id="pop"></table>
       <table id="bollywood"></table>
     </table>
         </div>
+      </div>
+    </div>
+  </div>
+
+
       
+<!-- End of repertoire section -->
+<!-- Prices section -->
+
       <hr width="50%" class="mt-20" />
       <div class="row" id="prices">
         <div class="col-12 justify-content-center">
@@ -179,6 +215,9 @@
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
         </div>
       </div>
+
+<!-- end of Prices section -->
+<!-- Contact section -->
 
       <hr width="50%" class="mt-0" />
 
@@ -207,6 +246,7 @@
       </div>   
 			
 		</div><!--End of copied code-->
+    <!-- End of contact section -->
 
     
     <script>

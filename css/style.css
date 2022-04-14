@@ -67,9 +67,24 @@ li {
 }
 
 td {
-  width: 50% !important;
+  width: 33% !important;
 }
 
+th {
+  width: 33% !important;
+  padding: 12px !important;
+}
+
+.header {
+  background-color: #f1f1f1;
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border-top: 1px solid #ddd; /* Add a grey border */
+  border-right: 1px solid #ddd; /* Add a grey border */
+  border-left: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+  
+}
 #myInput {
   background-image: url("/css/searchicon.png"); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
@@ -87,7 +102,7 @@ td {
 #bollywood {
   border-collapse: collapse; /* Collapse borders */
   width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
+ 
   font-size: 18px; /* Increase font-size */
 }
 
@@ -107,7 +122,9 @@ td {
 #pop tr,
 #bollywood tr {
   /* Add a bottom border to all table rows */
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* Add a grey border */
+  border-right: 1px solid #ddd; /* Add a grey border */
+  border-left: 1px solid #ddd; /* Add a grey border */
 }
 
 #myTable tr.header,

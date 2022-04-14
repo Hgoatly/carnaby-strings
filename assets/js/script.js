@@ -1,4 +1,4 @@
-import data from "/assets/csv/repertoire.json" assert { type: "json" };
+import data from "/assets/csv/carnaby-repertoire.json" assert { type: "json" };
 
 // console.log(data)
 
@@ -17,7 +17,7 @@ import data from "/assets/csv/repertoire.json" assert { type: "json" };
 const myTable = document.querySelector("#myTable");
 
 data.forEach((item) => {
-  if (item.genre === "classical") {
+  if (item.genre === "Classical") {
     myTable.innerHTML += `
   
     <tr class="songs">
@@ -26,6 +26,9 @@ data.forEach((item) => {
     </td>
     <td class="composer">
     ${item.composer}
+    </td>
+    <td class="composer">
+    ${item.genre}
     </td>
     </tr>
   
@@ -46,6 +49,9 @@ data.forEach((item) => {
     <td class="composer">
     ${item.composer}
     </td>
+    <td class="composer">
+    ${item.genre}
+    </td>
     </tr>
 
   `;
@@ -55,7 +61,7 @@ data.forEach((item) => {
 const pop = document.querySelector("#pop");
 
 data.forEach((item) => {
-  if (item.genre === "pop") {
+  if (item.genre === "Pop") {
     pop.innerHTML += `
   
     <tr class="songs">
@@ -64,6 +70,9 @@ data.forEach((item) => {
     </td>
     <td class="composer">
     ${item.composer}
+    </td>
+    <td class="composer">
+    ${item.genre}
     </td>
     </tr>
 
@@ -83,6 +92,9 @@ data.forEach((item) => {
     </td>
     <td class="composer">
     ${item.composer}
+    </td>
+    <td class="composer">
+    ${item.genre}
     </td>
     </tr>
 
