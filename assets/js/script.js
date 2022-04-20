@@ -139,5 +139,5 @@ function showBollywood() {
   document.getElementById("myTable").style.display = "none";
   document.getElementById("musicals-and-jazz").style.display = "none";
   document.getElementById("pop").style.display = "none";
-  document.getElementById("bollywood").style.display = "block";
+  document.getElementById("bollywood").style.display = "";
 }
