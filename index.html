@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <meta content="Wedding and Background music String Quartet" name="Description">
+    <script src="https://kit.fontawesome.com/e02943c769.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
@@ -173,21 +174,28 @@
         </button>
       </h5>
     </div>
-
+    
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
+        
         <input id="myInput" onkeyup="searchMusic()" type="text"
-      name="search" placeholder="Search our repertoire..">
-        <div id="myUL">
+      name="search" placeholder="Search our repertoire...">
+      
+      <h4>Filter By Genre</h4>
+      <div class="mb-4">
+      <button id="all-button" class="btn">Show All</button>
+        <button id="classical-button" class="btn">Classical</button>
+        <button id="pop-button" class="btn">Pop</button>
+        <button id="bollywood-button" class="btn">bollywood</button>
+      </div>  
+      <div id="myUL">
 
           <table><tr class="header">
             <th>Title</th>
             <th>Composer</th>
             <th>Genre</th>
           </tr></table>
-        <table id="myTable">
-          
-        
+        <table id="myTable"> 
         <table id="musicals-and-jazz"></table>
       <table id="pop"></table>
       <table id="bollywood"></table>
@@ -196,8 +204,6 @@
       </div>
     </div>
   </div>
-
-
       
 <!-- End of repertoire section -->
 <!-- Prices section -->

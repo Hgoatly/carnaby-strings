@@ -102,7 +102,6 @@ th {
 #bollywood {
   border-collapse: collapse; /* Collapse borders */
   width: 100%; /* Full-width */
- 
   font-size: 18px; /* Increase font-size */
 }
 
@@ -143,6 +142,10 @@ th {
   background-color: #f2f2f2;
 }
 
+#myUL {
+  height: 75vh;
+  overflow-y: auto;
+}
 @media only screen and (max-width: 992px) {
   h1 {
     font-size: 150px;

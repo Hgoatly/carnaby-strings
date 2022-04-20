@@ -14,6 +14,8 @@ import data from "/assets/csv/carnaby-repertoire.json" assert { type: "json" };
 
 // });
 
+// Populate repertoire section with JSON data. 
+
 const myTable = document.querySelector("#myTable");
 
 data.forEach((item) => {
@@ -101,3 +103,41 @@ data.forEach((item) => {
   `;
   }
 });
+
+// Filter buttons for repertoire list
+
+document.getElementById("all-button").addEventListener("click", showAll);
+
+function showAll() {
+  document.getElementById("myTable").style.display = "block";
+  document.getElementById("musicals-and-jazz").style.display = "block";
+  document.getElementById("pop").style.display = "block";
+  document.getElementById("bollywood").style.display = "block";
+}
+
+document.getElementById("classical-button").addEventListener("click", showClassical);
+
+function showClassical() {
+  document.getElementById("myTable").style.display = "block";
+  document.getElementById("musicals-and-jazz").style.display = "none";
+  document.getElementById("pop").style.display = "none";
+  document.getElementById("bollywood").style.display = "none";
+}
+
+document.getElementById("pop-button").addEventListener("click", showPop);
+
+function showPop() {
+  document.getElementById("myTable").style.display = "none";
+  document.getElementById("musicals-and-jazz").style.display = "none";
+  document.getElementById("pop").style.display = "block";
+  document.getElementById("bollywood").style.display = "none";
+}
+
+document.getElementById("bollywood-button").addEventListener("click", showBollywood);
+
+function showBollywood() {
+  document.getElementById("myTable").style.display = "none";
+  document.getElementById("musicals-and-jazz").style.display = "none";
+  document.getElementById("pop").style.display = "none";
+  document.getElementById("bollywood").style.display = "block";
+}
