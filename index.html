@@ -104,7 +104,7 @@
       <div class="row d-none d-md-block">
         <div class="col-12">
           <div class="hero-image">
-            <img src="assets\hero-cropped-1.jpg" alt="" style="width: 100%" class=""/>
+            <img src="assets\hero_cropped_compressed.jpg" alt="" style="width: 100%" class=""/>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
       <div class="row d-block d-md-none">
         <div class="col-12">
           <div class="hero-image">
-            <img src="assets\hero.jpg" alt="" style="width: 100%" class=""/>
+            <img src="assets\hero_compressed.jpg" alt="" style="width: 100%" class=""/>
           </div>
         </div>
       </div>
@@ -233,27 +233,31 @@
 <!-- end of Prices section -->
 <!-- Contact section -->
 
-      <hr width="50%" class="mt-0" />
-
-      
+      <hr width="50%" class="mt-0" />      
       <div class="row" id="contact">
         <div class="col-12 justify-content-center">
           <h3 class="text-center fs-xxxlarge">Contact</h3>
         </div>
       </div>
       <hr width="50%" class="mt-0" />
-      <div class="row justify-content-center">	
-				<div class="center-form col-12">
+      <div class="row justify-content-center py-5">
+        <div class="col-6 d-none d-md-block">
+          <div class="row justify-content-center">
+          <img src="assets\carnaby_informal_brightened_compressed.jpg" alt="Informal quartet group image" class="contact-image">
+        </div>
+        </div>	
+				<div class="center-form col-12 col-md-6">
+          <h3 class="text-center fs-xxxlarge">Contact Us</h3>
+          <p>
+            Please fill out the contact form with your enquiry, and we'll get in touch as soon as possible.
+          </p>
           <form id="contact-form" name="contact-form">
             <input type="hidden" name="contact_number">
-              <label>Name</label>
               <input type="text" name="user_name" id="name" required="" placeholder="Name" class="form-control">
-              <label>Email</label>
               <input type="email" name="user_email" id="email" class="form-control" placeholder="Email" required="">
-              <label>Message</label>
               <textarea name="message" id="enquiry" class="form-control" placeholder="Your enquiry" required="" rows="5"></textarea>
               <div class="text-center">
-              <input type="submit" value="Send" class="mt-3">
+              <input type="submit" value="Send" class="mt-3 btn">
             </div>
           </form>
         </div>
