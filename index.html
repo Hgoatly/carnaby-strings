@@ -10,7 +10,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -150,20 +150,27 @@
         </div>
       </div>
       <hr width="50%" class="mt-0" />
+      
       <div class="video-container my-5">
       <iframe class="video" src="https://www.youtube.com/embed/3OrQEyboU6U?autoplay=1&mute=1&enablejsapi=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
+    <div id="watch-section" class="py-2 mb-5">
     <div id="videoAccordion">
-      <div class="card">
+      <div class="card mx-5 mt-5">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#videoOne" aria-expanded="true" aria-controls="videoOne">
-              Canon - Pachelbel <i class="fa-solid fa-angle-down"></i>
+            <button id="video-one" class="btn btn-link" data-toggle="collapse" data-target="#videoOne" aria-expanded="true" aria-controls="videoOne">
+              Canon - Pachelbel <i id="arrowOne" class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
             </button>
           </h5>
         </div>
-    
+        <script>
+          document.getElementById("video-one").addEventListener("click", rotateArrow);
+
+function rotateArrow() {
+  document.getElementById("arrowOne").style.transform = "rotate(50px)";
+}
+        </script>
         <div id="videoOne" class="collapse" aria-labelledby="headingOne" data-parent="#videoAccordion">
           <div class="card-body">
             <div class="video-container my-5">
@@ -172,7 +179,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoTwo" aria-expanded="false" aria-controls="videoTwo">
@@ -188,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoThree" aria-expanded="false" aria-controls="collapseThree">
@@ -202,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingFour">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoFour" aria-expanded="false" aria-controls="collapseFour">
@@ -216,7 +223,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingFive">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoFive" aria-expanded="false" aria-controls="collapseFive">
@@ -230,7 +237,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingSix">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoSix" aria-expanded="false" aria-controls="collapseFive">
@@ -244,7 +251,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-5">
         <div class="card-header" id="headingSeven">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -258,8 +265,50 @@
           </div>
         </div>
       </div>
+      <div class="card mx-5">
+        <div class="card-header" id="headingEight">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoEight" aria-expanded="false" aria-controls="collapseEight">
+              Viva la Vida - Coldplay
+            </button>
+          </h5>
+        </div>
+        <div id="videoEight" class="collapse" aria-labelledby="headingEight" data-parent="#videoAccordion">
+          <div class="video-container my-5">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Xqa3h2icXWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-5">
+        <div class="card-header" id="headingNine">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoNine" aria-expanded="false" aria-controls="collapseNine">
+              Perfect -Ed Sheeran
+            </button>
+          </h5>
+        </div>
+        <div id="videoNine" class="collapse" aria-labelledby="headingNine" data-parent="#videoAccordion">
+          <div class="video-container my-5">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UntGefePO2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-5 mb-5">
+        <div class="card-header" id="headingTen">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoTen" aria-expanded="false" aria-controls="collapseTen">
+              Sway - Michael Buble
+            </button>
+          </h5>
+        </div>
+        <div id="videoTen" class="collapse" aria-labelledby="headingTen" data-parent="#videoAccordion">
+          <div class="video-container my-5">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/WTGe9VpWD4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-      
+  </div>      
 
 <!-- End of Watch section -->
 <!-- Repertoire section -->

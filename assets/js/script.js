@@ -141,3 +141,4 @@ function showBollywood() {
   document.getElementById("pop").style.display = "none";
   document.getElementById("bollywood").style.display = "";
 }
+
