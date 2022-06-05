@@ -18,13 +18,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <meta content="Wedding and Background music String Quartet" name="Description">
     <script src="https://kit.fontawesome.com/e02943c769.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
           // https://dashboard.emailjs.com/admin/integration
-          emailjs.init('lK_G_FgJcPOf8ddn7');
+          emailjs.init('user_4qm5XOihPETG4jb0qW5UN');
       })();
   </script>
   <script type="text/javascript">
@@ -34,7 +38,7 @@
               // generate a five digit number for the contact_number variable
               this.contact_number.value = Math.random() * 100000 | 0;
               // these IDs from the previous steps
-              emailjs.sendForm('service_dh6h8mf', 'template_wg21w8w', this)
+              emailjs.sendForm('service_wpnwhhc', 'template_l8z4k7c', this)
                   .then(function() {
                       console.log('SUCCESS!');
                       alert("Your enquiry has been sent.")
@@ -125,7 +129,7 @@
         <h2 class="text-center">Music for weddings and events</h2>
         </div>
         
-        <div class="col-12 py-5">
+        <div class="col-12 pt-5 pb-0 pb-md-5">
           <p>
             One of the finest and highly experienced string quartets in London, Carnaby Strings is the perfect choice for your wedding or corporate event. We are a stylish all female ensemble who perform with prestigious performers and ensembles including the Royal Opera House orchestra, Michael Buble, Bastille and the Royal Philharmonic Orchestra.
             We have a huge repertoire of pop songs, as well playing classical music, Bollywood and jazz standards. There is an option to arrange any special song for your wedding if we don’t have it already, tailoring the music to your special occasion.            
@@ -139,8 +143,11 @@
           </p>
         </div>
         <div class="row pb-5">
-          <div class="col-12 ">
+          <div class="col-12 d-none d-md-block">
             <img src="assets\carnaby-logo.png" alt="Carnaby Strings Logo" id="logo" width="300" height="auto">
+          </div>
+          <div class="col-12 d-block d-md-none">
+            <img src="assets\carnaby-logo.png" alt="Carnaby Strings Logo" id="logo" width="150" height="auto">
           </div>
         </div>
       </div>
@@ -167,7 +174,7 @@
             <button id="video-one" class="btn btn-link" data-toggle="collapse" data-target="#videoOne" aria-expanded="true" aria-controls="videoOne">
               Canon - Pachelbel 
             </button>
-            <i id="arrowOne" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwo" class="fa fa-angle-up"></i>
+            <i id="arrowOne" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwo" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <script>
@@ -188,13 +195,7 @@ function switchArrow() {
     arrowOne.style.display = "inline-block";
     arrowTwo.style.display = "none";
   }
-  // if (arrowOne.style.display==="block") {
-  //   arrowOne.style.display="none";
-  //   arrowTwo.style.display==="block";
-  // } else  {
-  //   arrowTwo.style.display==="none";
-  //   arrowOne.style.display="block";
-  // }
+
 }
         </script>
         <div id="videoOne" class="collapse" aria-labelledby="headingOne" data-parent="#videoAccordion">
@@ -413,10 +414,7 @@ function switchArrow() {
       <div id="prices-section">
       <div class="row my-5 align-items-center ">
         <div class="col-12 col-md-6 py-5 justify-content-center">
-          
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea</p>
-          
-       
+          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea</p>         
         </div>
         <div class="col-12 col-md-6 d-none d-md-block">
           <div class="row justify-content-center">
@@ -448,11 +446,11 @@ function switchArrow() {
           </p>
           <form id="contact-form" name="contact-form">
             <input type="hidden" name="contact_number">
-              <input type="text" name="user_name" id="name" required="" placeholder="Name" class="form-control">
-              <input type="email" name="user_email" id="email" class="form-control" placeholder="Email" required="">
+              <input type="text" name="user_name" id="name" required="" placeholder="Name" class="form-control mb-2">
+              <input type="email" name="user_email" id="email" class="form-control mb-2" placeholder="Email" required="">
               <textarea name="message" id="enquiry" class="form-control" placeholder="Your enquiry" required="" rows="5"></textarea>
               <div class="text-center">
-              <input type="submit" value="Send" class="mt-3 btn">
+              <input type="submit" value="Send" class="mt-3 btn submit-btn">
             </div>
           </form>
         </div>
@@ -496,50 +494,26 @@ function switchArrow() {
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-none d-lg-block">
           <!-- Content -->
           <img src="assets\carnaby-logo.png" alt="Carnaby Strings logo" id="footer-logo">
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 d-none d-lg-block">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 d-none d-lg-block">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="#watch" class="text-reset footer-link">Watch</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="#repertoire" class="text-reset footer-link">Repertoire</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="#prices" class="text-reset footer-link">Prices</a>
           </p>
         </div>
         <!-- Grid column -->

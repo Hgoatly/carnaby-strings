@@ -183,8 +183,26 @@ th {
   border-radius: 5px;
 }
 
+.fa-angle-down,
+.fa-angle-up {
+  padding-top: 12px;
+}
 .center-form {
   padding-top: 80px;
+}
+
+.form-control {
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0.15rem;
+}
+
+.submit-btn {
+  background-color: #fff;
+  color:#000;
+  border: 1px solid #000;
+  border-radius: 0.15rem;
+  font-family: "Roboto", sans-serif; 
 }
 
 #logo {
@@ -218,5 +236,9 @@ th {
   }
   nav.navbar.navbar-expand-lg {
     height: 50px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
