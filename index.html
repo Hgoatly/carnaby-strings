@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Joan&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -155,7 +152,7 @@
 <!-- End of About section -->
 <!-- Watch section -->
 
-      <hr width="50%" class="mt-0" />
+      
       <div id="watch" class="row">
         <div class="col-12 justify-content-center">
           <h3 class="text-center fs-xxxlarge">Watch</h3>
@@ -171,7 +168,7 @@
       <div class="card mx-5 mt-5">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-            <button id="video-one" class="btn btn-link" data-toggle="collapse" data-target="#videoOne" aria-expanded="true" aria-controls="videoOne">
+            <button id="video-one" class="btn btn-link text-left" data-toggle="collapse" data-target="#videoOne" aria-expanded="true" aria-controls="videoOne">
               Canon - Pachelbel 
             </button>
             <i id="arrowOne" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwo" class="fa fa-angle-up" style="float:right;"></i>
@@ -181,22 +178,22 @@
           document.getElementById("video-one").addEventListener("click", switchArrow);
 
           arrowOne = document.getElementById("arrowOne")
-  arrowTwo = document.getElementById("arrowTwo")
+          arrowTwo = document.getElementById("arrowTwo")
 
-  arrowOne.style.display = "inline-block";
-  arrowTwo.style.display = "none";
+          arrowOne.style.display = "inline-block";
+          arrowTwo.style.display = "none";
 
-function switchArrow() {
+          function switchArrow() {
   
-  if (arrowOne.style.display === "inline-block") {
-    arrowOne.style.display = "none";
-    arrowTwo.style.display = "inline-block";
-  } else if (arrowTwo.style.display === "inline-block") {
-    arrowOne.style.display = "inline-block";
-    arrowTwo.style.display = "none";
-  }
+          if (arrowOne.style.display === "inline-block") {
+            arrowOne.style.display = "none";
+            arrowTwo.style.display = "inline-block";
+          } else if (arrowTwo.style.display === "inline-block") {
+            arrowOne.style.display = "inline-block";
+            arrowTwo.style.display = "none";
+          }
 
-}
+          }
         </script>
         <div id="videoOne" class="collapse" aria-labelledby="headingOne" data-parent="#videoAccordion">
           <div class="card-body">
@@ -209,7 +206,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoTwo" aria-expanded="false" aria-controls="videoTwo">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTwo" aria-expanded="false" aria-controls="videoTwo">
               Gabriel's Oboe - Morricone
             </button>
           </h5>
@@ -225,7 +222,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoThree" aria-expanded="false" aria-controls="collapseThree">
               I'm Kissing You - Desree
             </button>
           </h5>
@@ -239,7 +236,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingFour">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoFour" aria-expanded="false" aria-controls="collapseFour">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFour" aria-expanded="false" aria-controls="collapseFour">
               Marry You - Bruno Mars
             </button>
           </h5>
@@ -253,7 +250,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingFive">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoFive" aria-expanded="false" aria-controls="collapseFive">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFive" aria-expanded="false" aria-controls="collapseFive">
               1000 Years - Christina Perri
             </button>
           </h5>
@@ -267,7 +264,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingSix">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoSix" aria-expanded="false" aria-controls="collapseFive">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSix" aria-expanded="false" aria-controls="collapseFive">
               Mr Brightside - The Killers
             </button>
           </h5>
@@ -280,8 +277,8 @@ function switchArrow() {
       </div>
       <div class="card mx-5">
         <div class="card-header" id="headingSeven">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoSeven" aria-expanded="false" aria-controls="collapseSeven">
+          <h5 class="mb-0"> 
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSeven" aria-expanded="false" aria-controls="collapseSeven">
               Jai Ho - Slumdog Millionaire
             </button>
           </h5>
@@ -295,7 +292,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingEight">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoEight" aria-expanded="false" aria-controls="collapseEight">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoEight" aria-expanded="false" aria-controls="collapseEight">
               Viva la Vida - Coldplay
             </button>
           </h5>
@@ -309,7 +306,7 @@ function switchArrow() {
       <div class="card mx-5">
         <div class="card-header" id="headingNine">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoNine" aria-expanded="false" aria-controls="collapseNine">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoNine" aria-expanded="false" aria-controls="collapseNine">
               Perfect -Ed Sheeran
             </button>
           </h5>
@@ -323,7 +320,7 @@ function switchArrow() {
       <div class="card mx-5 mb-5">
         <div class="card-header" id="headingTen">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#videoTen" aria-expanded="false" aria-controls="collapseTen">
+            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTen" aria-expanded="false" aria-controls="collapseTen">
               Sway - Michael Buble
             </button>
           </h5>
@@ -339,7 +336,7 @@ function switchArrow() {
 
 <!-- End of Watch section -->
 <!-- Repertoire section -->
-      <hr width="50%" class="mt-0" />
+      
       <div id="repertoire" class="row">
         <div class="col-12 justify-content-center">
           <h3 class="text-center fs-xxxlarge">Repertoire</h3>
@@ -366,7 +363,7 @@ function switchArrow() {
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <strong>Click</strong> to View our Repertoire
+          <strong>Click</strong> to View and search our repertoire
         </button>
       </h5>
     </div>
@@ -404,7 +401,7 @@ function switchArrow() {
 <!-- End of repertoire section -->
 <!-- Prices section -->
 
-      <hr width="50%" class="mt-20" />
+      
       <div class="row" id="prices">
         <div class="col-12 justify-content-center">
           <h3 class="text-center fs-xxxlarge">Prices</h3>
@@ -418,7 +415,7 @@ function switchArrow() {
         </div>
         <div class="col-12 col-md-6 d-none d-md-block">
           <div class="row justify-content-center">
-            <img src="assets\carnaby-strings-stairs.jpg" alt="Informal quartet group image" class="contact-image">
+            <img src="assets\asylum-without-table.jpg" alt="Informal quartet group image" class="contact-image">
           </div>
         </div>
       </div>
@@ -426,7 +423,7 @@ function switchArrow() {
 <!-- end of Prices section -->
 <!-- Contact section -->
 
-      <hr width="50%" class="mt-0" />      
+           
       <div class="row" id="contact">
         <div class="col-12 justify-content-center">
           <h3 class="text-center fs-xxxlarge">Contact</h3>
@@ -573,6 +570,6 @@ function switchArrow() {
     ></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="module" src="assets\js\script.js"></script>
-    </script> 
+  
   </body>
 </html>

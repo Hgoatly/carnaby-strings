@@ -13,8 +13,10 @@ body {
 }
 
 h1 {
-  font-family: "Inspiration", cursive;
-  font-size: 200px;
+  /* font-family: "Inspiration", cursive; */
+  font-family: "Joan", sans-serif;
+  font-size: 150px;
+  font-weight: 100;
 }
 
 .navbar {
@@ -38,11 +40,11 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
 }
-h3 {
-  font-family: "Inspiration", cursive;
-  font-size: 50px;
-}
 
+h3 {
+  font-family: "Joan", sans-serif;
+  font-size: 30px;
+}
 
 .video {
   position: absolute;
@@ -68,6 +70,11 @@ h3 {
 .card-header {
   background-color: #fff;
   border-bottom: 0 !important;
+}
+
+.mb-0 > button {
+  display: inline-block;
+  width: 90%;
 }
 
 .btn.btn-link {
