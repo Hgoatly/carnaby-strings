@@ -142,3 +142,23 @@ function showBollywood() {
   document.getElementById("bollywood").style.display = "";
 }
 
+
+document.getElementById("video-one").addEventListener("click", switchArrow);
+
+arrowOne = document.getElementById("arrowOne")
+arrowTwo = document.getElementById("arrowTwo")
+
+arrowOne.style.display = "inline-block";
+arrowTwo.style.display = "none";
+
+function switchArrow() {
+
+if (arrowOne.style.display === "inline-block") {
+  arrowOne.style.display = "none";
+  arrowTwo.style.display = "inline-block";
+} else if (arrowTwo.style.display === "inline-block") {
+  arrowOne.style.display = "inline-block";
+  arrowTwo.style.display = "none";
+}
+
+}

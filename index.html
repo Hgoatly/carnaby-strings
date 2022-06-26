@@ -174,27 +174,7 @@
             <i id="arrowOne" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwo" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
-        <script>
-          document.getElementById("video-one").addEventListener("click", switchArrow);
-
-          arrowOne = document.getElementById("arrowOne")
-          arrowTwo = document.getElementById("arrowTwo")
-
-          arrowOne.style.display = "inline-block";
-          arrowTwo.style.display = "none";
-
-          function switchArrow() {
-  
-          if (arrowOne.style.display === "inline-block") {
-            arrowOne.style.display = "none";
-            arrowTwo.style.display = "inline-block";
-          } else if (arrowTwo.style.display === "inline-block") {
-            arrowOne.style.display = "inline-block";
-            arrowTwo.style.display = "none";
-          }
-
-          }
-        </script>
+        
         <div id="videoOne" class="collapse" aria-labelledby="headingOne" data-parent="#videoAccordion">
           <div class="card-body">
             <div class="video-container my-5">
@@ -206,9 +186,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTwo" aria-expanded="false" aria-controls="videoTwo">
+            <button id="video-two" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTwo" aria-expanded="false" aria-controls="videoTwo">
               Gabriel's Oboe - Morricone
             </button>
+            <i id="arrowThree" class="fa fa-angle-down" style="float:right;"></i><i id="arrowFour" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#videoAccordion">
@@ -222,9 +203,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoThree" aria-expanded="false" aria-controls="collapseThree">
+            <button id="video-three" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoThree" aria-expanded="false" aria-controls="collapseThree">
               I'm Kissing You - Desree
             </button>
+            <i id="arrowFive" class="fa fa-angle-down" style="float:right;"></i><i id="arrowSix" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoThree" class="collapse" aria-labelledby="headingThree" data-parent="#videoAccordion">
@@ -236,9 +218,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingFour">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFour" aria-expanded="false" aria-controls="collapseFour">
+            <button id="video-four" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFour" aria-expanded="false" aria-controls="collapseFour">
               Marry You - Bruno Mars
             </button>
+            <i id="arrowSeven" class="fa fa-angle-down" style="float:right;"></i><i id="arrowEight" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoFour" class="collapse" aria-labelledby="headingFour" data-parent="#videoAccordion">
@@ -250,9 +233,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingFive">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFive" aria-expanded="false" aria-controls="collapseFive">
+            <button id="video-five" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoFive" aria-expanded="false" aria-controls="collapseFive">
               1000 Years - Christina Perri
             </button>
+            <i id="arrowNine" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTen" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoFive" class="collapse" aria-labelledby="headingFive" data-parent="#videoAccordion">
@@ -264,9 +248,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingSix">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSix" aria-expanded="false" aria-controls="collapseFive">
+            <button id="video-six" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSix" aria-expanded="false" aria-controls="collapseFive">
               Mr Brightside - The Killers
             </button>
+            <i id="arrowEleven" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwelve" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoSix" class="collapse" aria-labelledby="headingFive" data-parent="#videoAccordion">
@@ -278,9 +263,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingSeven">
           <h5 class="mb-0"> 
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <button id="video-seven" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoSeven" aria-expanded="false" aria-controls="collapseSeven">
               Jai Ho - Slumdog Millionaire
             </button>
+            <i id="arrowThirteen" class="fa fa-angle-down" style="float:right;"></i><i id="arrowFourteen" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#videoAccordion">
@@ -292,9 +278,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingEight">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoEight" aria-expanded="false" aria-controls="collapseEight">
+            <button id="video-eight" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoEight" aria-expanded="false" aria-controls="collapseEight">
               Viva la Vida - Coldplay
             </button>
+            <i id="arrowFifteen" class="fa fa-angle-down" style="float:right;"></i><i id="arrowSixteen" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoEight" class="collapse" aria-labelledby="headingEight" data-parent="#videoAccordion">
@@ -306,9 +293,10 @@
       <div class="card mx-5">
         <div class="card-header" id="headingNine">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoNine" aria-expanded="false" aria-controls="collapseNine">
+            <button id="video-nine" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoNine" aria-expanded="false" aria-controls="collapseNine">
               Perfect -Ed Sheeran
             </button>
+            <i id="arrowSeventeen" class="fa fa-angle-down" style="float:right;"></i><i id="arrowEighteen" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoNine" class="collapse" aria-labelledby="headingNine" data-parent="#videoAccordion">
@@ -320,9 +308,10 @@
       <div class="card mx-5 mb-5">
         <div class="card-header" id="headingTen">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTen" aria-expanded="false" aria-controls="collapseTen">
+            <button id="video-ten" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#videoTen" aria-expanded="false" aria-controls="collapseTen">
               Sway - Michael Buble
             </button>
+            <i id="arrowNineteen" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwenty" class="fa fa-angle-up" style="float:right;"></i>
           </h5>
         </div>
         <div id="videoTen" class="collapse" aria-labelledby="headingTen" data-parent="#videoAccordion">
@@ -355,14 +344,13 @@
         
       </div>
 
-
 <!-- Repertoire accordion -->
 
 <div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           <strong>Click</strong> to View and search our repertoire
         </button>
       </h5>
@@ -403,7 +391,7 @@
 
       
       <div class="row" id="prices">
-        <div class="col-12 justify-content-center">
+        <div class="col-12 justify-content-center mt-4">
           <h3 class="text-center fs-xxxlarge">Prices</h3>
         </div>
       </div>
@@ -422,7 +410,6 @@
     </div>
 <!-- end of Prices section -->
 <!-- Contact section -->
-
            
       <div class="row" id="contact">
         <div class="col-12 justify-content-center">
@@ -543,25 +530,160 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-    <script>
-      function searchMusic() {
-    let input = document.getElementById('myInput').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('songs');
-    let items = document.getElementsByClassName('items');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";        
-        }
-        else {
-            x[i].style.display=""; 
-        }
+<script>
+    document.getElementById("video-one").addEventListener("click", switchArrow);
+    document.getElementById("video-two").addEventListener("click", switchArrow);
+    document.getElementById("video-three").addEventListener("click", switchArrow);
+    document.getElementById("video-four").addEventListener("click", switchArrow);
+    document.getElementById("video-five").addEventListener("click", switchArrow);
+    document.getElementById("video-six").addEventListener("click", switchArrow);
+    document.getElementById("video-seven").addEventListener("click", switchArrow);
+    document.getElementById("video-eight").addEventListener("click", switchArrow);
+    document.getElementById("video-nine").addEventListener("click", switchArrow);
+    document.getElementById("video-ten").addEventListener("click", switchArrow);
+
+    arrowOne = document.getElementById("arrowOne");
+    arrowTwo = document.getElementById("arrowTwo");
+    arrowThree = document.getElementById("arrowThree");
+    arrowFour = document.getElementById("arrowFour");
+    arrowFive = document.getElementById("arrowFive");
+    arrowSix = document.getElementById("arrowSix");
+    arrowSeven = document.getElementById("arrowSeven");
+    arrowEight = document.getElementById("arrowEight");
+    arrowNine = document.getElementById("arrowNine");
+    arrowTen = document.getElementById("arrowTen");
+    arrowEleven = document.getElementById("arrowEleven");
+    arrowTwelve = document.getElementById("arrowTwelve");
+    arrowThirteen = document.getElementById("arrowThirteen");
+    arrowFourteen = document.getElementById("arrowFourteen");
+    arrowFifteen = document.getElementById("arrowFifteen");
+    arrowSixteen = document.getElementById("arrowSixteen");
+    arrowSeventeen = document.getElementById("arrowSeventeen");
+    arrowEighteen = document.getElementById("arrowEighteen");
+    arrowNineteen = document.getElementById("arrowNineteen");
+    arrowTwenty = document.getElementById("arrowTwenty");
+
+    arrowOne.style.display = "inline-block";
+    arrowTwo.style.display = "none";
+    arrowThree.style.display = "block";
+    arrowFour.style.display = "none";
+    arrowFive.style.display = "inline-block";
+    arrowSix.style.display = "none";
+    arrowSeven.style.display = "inline-block";
+    arrowEight.style.display ="none";
+    arrowNine.style.display = "inline-block";
+    arrowTen.style.display ="none";
+    arrowEleven.style.display = "inline-block";
+    arrowTwelve.style.display ="none";
+    arrowThirteen.style.display = "inline-block";
+    arrowFourteen.style.display ="none";
+    arrowFifteen.style.display = "inline-block";
+    arrowSixteen.style.display ="none";
+    arrowSeventeen.style.display = "inline-block";
+    arrowEighteen.style.display ="none";
+    arrowNineteen.style.display = "inline-block";
+    arrowTwenty.style.display ="none";
+
+    function switchArrow() {
+
+    if (arrowOne.style.display === "inline-block") {
+      arrowOne.style.display = "none";
+      arrowTwo.style.display = "inline-block";
+    } else if (arrowTwo.style.display === "inline-block") {
+      arrowOne.style.display = "inline-block";
+      arrowTwo.style.display = "none";
+    }
+    
+    if (arrowThree.style.display === "block") {
+      arrowThree.style.display = "none";
+      arrowFour.style.display = "block";
+    } else if (arrowFour.style.display === "block") {
+      arrowThree.style.display = "block";
+      arrowFour.style.display = "none";
+    }
+    if (arrowFive.style.display === "inline-block") {
+      arrowFive.style.display = "none";
+      arrowSix.style.display = "inline-block";
+    } else if (arrowSix.style.display === "inline-block") {
+      arrowFive.style.display = "inline-block";
+      arrowSix.style.display = "none";
+    }
+
+    if (arrowSeven.style.display === "inline-block") {
+      arrowSeven.style.display = "none";
+      arrowEight.style.display = "inline-block";
+    } else if (arrowEight.style.display === "inline-block") {
+      arrowSeven.style.display = "inline-block";
+      arrowEight.style.display = "none";
+    }
+
+    if (arrowNine.style.display === "inline-block") {
+      arrowNine.style.display = "none";
+      arrowTen.style.display = "inline-block";
+    } else if (arrowTen.style.display === "inline-block") {
+      arrowNine.style.display = "inline-block";
+      arrowTen.style.display = "none";
+    }
+
+    if (arrowEleven.style.display === "inline-block") {
+      arrowEleven.style.display = "none";
+      arrowTwelve.style.display = "inline-block";
+    } else if (arrowTwelve.style.display === "inline-block") {
+      arrowEleven.style.display = "inline-block";
+      arrowTwelve.style.display = "none";
+    }
+
+    if (arrowThirteen.style.display === "inline-block") {
+      arrowThirteen.style.display = "none";
+      arrowFourteen.style.display = "inline-block";
+    } else if (arrowFourteen.style.display === "inline-block") {
+      arrowThirteen.style.display = "inline-block";
+      arrowFourteen.style.display = "none";
+    }
+
+    if (arrowFifteen.style.display === "inline-block") {
+      arrowFifteen.style.display = "none";
+      arrowSixteen.style.display = "inline-block";
+    } else if (arrowSixteen.style.display === "inline-block") {
+      arrowFifteen.style.display = "inline-block";
+      arrowSixteen.style.display = "none";
+    }
+
+    if (arrowSeventeen.style.display === "inline-block") {
+      arrowSeventeen.style.display = "none";
+      arrowEighteen.style.display = "inline-block";
+    } else if (arrowEighteen.style.display === "inline-block") {
+      arrowSeventeen.style.display = "inline-block";
+      arrowEighteen.style.display = "none";
+    }
+
+    if (arrowNineteen.style.display === "inline-block") {
+      arrowNineteen.style.display = "none";
+      arrowTwenty.style.display = "inline-block";
+    } else if (arrowTwenty.style.display === "inline-block") {
+      arrowNineteen.style.display = "inline-block";
+      arrowTwenty.style.display = "none";
+    }
+  }
+
+  function searchMusic() {
+let input = document.getElementById('myInput').value
+input=input.toLowerCase();
+let x = document.getElementsByClassName('songs');
+let items = document.getElementsByClassName('items');
+  
+for (i = 0; i < x.length; i++) { 
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display="none";        
+    }
+    else {
+        x[i].style.display=""; 
     }
 }
+}
 
-    </script>
-  
+</script>
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
