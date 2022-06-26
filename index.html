@@ -350,9 +350,10 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <button id="repertoire-button" class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           <strong>Click</strong> to View and search our repertoire
         </button>
+        <i id="arrowTwentyOne" class="fa fa-angle-down" style="float:right;"></i><i id="arrowTwentyTwo" class="fa fa-angle-up" style="float:right;"></i>
       </h5>
     </div>
     
@@ -459,13 +460,13 @@
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f socials fa-lg"></i>
       </a>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter socials fa-lg"></i>
       </a>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram socials fa-lg"></i>
       </a>
     </div>
     <!-- Right -->
@@ -541,6 +542,7 @@
     document.getElementById("video-eight").addEventListener("click", switchArrow);
     document.getElementById("video-nine").addEventListener("click", switchArrow);
     document.getElementById("video-ten").addEventListener("click", switchArrow);
+    document.getElementById("repertoire-button").addEventListener("click", switchArrow);
 
     arrowOne = document.getElementById("arrowOne");
     arrowTwo = document.getElementById("arrowTwo");
@@ -562,6 +564,8 @@
     arrowEighteen = document.getElementById("arrowEighteen");
     arrowNineteen = document.getElementById("arrowNineteen");
     arrowTwenty = document.getElementById("arrowTwenty");
+    arrowTwentyOne = document.getElementById("arrowTwentyOne");
+    arrowTwentyTwo = document.getElementById("arrowTwentyTwo");
 
     arrowOne.style.display = "inline-block";
     arrowTwo.style.display = "none";
@@ -583,6 +587,8 @@
     arrowEighteen.style.display ="none";
     arrowNineteen.style.display = "inline-block";
     arrowTwenty.style.display ="none";
+    arrowTwentyOne.style.display ="inline-block";
+    arrowTwentyTwo.style.display ="none";
 
     function switchArrow() {
 
@@ -663,6 +669,14 @@
     } else if (arrowTwenty.style.display === "inline-block") {
       arrowNineteen.style.display = "inline-block";
       arrowTwenty.style.display = "none";
+    }
+
+    if (arrowTwentyOne.style.display === "inline-block") {
+      arrowTwentyOne.style.display = "none";
+      arrowTwentyTwo.style.display = "inline-block";
+    } else if (arrowTwentyTwo.style.display === "inline-block") {
+      arrowTwentyOne.style.display = "inline-block";
+      arrowTwentyTwo.style.display = "none";
     }
   }
 
