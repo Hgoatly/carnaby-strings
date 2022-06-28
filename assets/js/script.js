@@ -1,4 +1,4 @@
-import data from "/assets/csv/carnaby-repertoire.json" assert { type: "json" }; 
+import data from "assets/csv/carnaby-repertoire.json" assert { type: "json" }; 
 
 const myTable = document.querySelector("#myTable");
 
