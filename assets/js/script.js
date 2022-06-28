@@ -1,20 +1,4 @@
-import data from "/assets/csv/carnaby-repertoire.json" assert { type: "json" };
-
-// console.log(data)
-
-// const repertoireList = []
-
-// for (var item in data) {
-//     repertoireList.push([item, data[item]])
-// }
-
-// console.log(repertoireList);
-
-// data.forEach(function(obj) { console.log(obj.title);
-
-// });
-
-// Populate repertoire section with JSON data. 
+import data from "/assets/csv/carnaby-repertoire.json" assert { type: "json" }; 
 
 const myTable = document.querySelector("#myTable");
 
