@@ -15,8 +15,9 @@ body {
 h1 {
   /* font-family: "Inspiration", cursive; */
   font-family: "Joan", sans-serif;
-  font-size: 150px;
   font-weight: 100;
+  font-size: 8vw;
+
 }
 
 .navbar {
@@ -37,7 +38,7 @@ li.nav-item {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Joan", sans-serif;
   font-size: 30px;
 }
 
@@ -229,11 +230,6 @@ th {
 .socials {
   color: #6c757d!important;
 }
-
-h1 {
-  font-size: 8vw;
-}
-
 
 @media only screen and (max-width: 600px) {
   .center-form {
