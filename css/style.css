@@ -217,6 +217,11 @@ th {
   border-radius: 10px;
 }
 
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
 #footer-logo {
   width: 300px;
   height: auto;
