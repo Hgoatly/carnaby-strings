@@ -218,8 +218,27 @@ th {
 }
 
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev,
+.carousel-indicators/*, .carousel-indicators */ {
     filter: invert(100%);
+}
+
+.reviews {
+  padding: 0 150px;
+  font-weight: 600;
+}
+
+#carouselExampleIndicators {
+  padding: 50px 0;
+}
+
+.carousel-inner {
+  height: 250px;
+}
+
+#review2, 
+#review3 {
+  padding-top: 75px;
 }
 
 #footer-logo {
