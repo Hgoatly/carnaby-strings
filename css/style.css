@@ -275,4 +275,23 @@ th {
   h2 {
     font-size: 20px;
   }
+
+  #review2, 
+  #review3 {
+    padding-top: 175px;
+  }
+
+  .reviews {
+    padding: 20px;
+  }
+
+  .carousel-inner {
+    height: 500px;
+  }
+
+  #carouselExampleIndicators {
+    padding: 0 0 50px 0;
+  }
+
 }
+
