@@ -109,7 +109,7 @@
       <div class="row d-none d-md-block">
         <div class="col-12">
           <div class="hero-image">
-            <img src="assets\carnaby-strings-video-screenshot.jpg" alt="" style="width: 100%" class=""/>
+            <img src="assets\hero-zoom-cropped.jpg" alt="String quartet image" style="width: 100%" class=""/>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
       <div class="row d-block d-md-none">
         <div class="col-12 px-0">
           <div class="hero-image">
-            <img src="assets\carnaby-strings-video-screenshot.jpg" alt="" style="width: 100%" class=""/>
+            <img src="assets\hero-zoom-cropped.jpg" alt="String Quartet image" style="width: 100%" class=""/>
           </div>
         </div>
       </div>
@@ -597,15 +597,15 @@
 <!-- Footer -->
 <script>
     document.getElementById("video-one").addEventListener("click", switchArrow);
-    document.getElementById("video-two").addEventListener("click", switchArrow);
-    document.getElementById("video-three").addEventListener("click", switchArrow);
-    document.getElementById("video-four").addEventListener("click", switchArrow);
-    document.getElementById("video-five").addEventListener("click", switchArrow);
-    document.getElementById("video-six").addEventListener("click", switchArrow);
-    document.getElementById("video-seven").addEventListener("click", switchArrow);
-    document.getElementById("video-eight").addEventListener("click", switchArrow);
-    document.getElementById("video-nine").addEventListener("click", switchArrow);
-    document.getElementById("video-ten").addEventListener("click", switchArrow);
+    document.getElementById("video-two").addEventListener("click", switchArrow2);
+    document.getElementById("video-three").addEventListener("click", switchArrow3);
+    document.getElementById("video-four").addEventListener("click", switchArrow4);
+    document.getElementById("video-five").addEventListener("click", switchArrow5);
+    document.getElementById("video-six").addEventListener("click", switchArrow6);
+    document.getElementById("video-seven").addEventListener("click", switchArrow7);
+    document.getElementById("video-eight").addEventListener("click", switchArrow8);
+    document.getElementById("video-nine").addEventListener("click", switchArrow9);
+    document.getElementById("video-ten").addEventListener("click", switchArrow10);
     document.getElementById("repertoire-button").addEventListener("click", switchArrow);
 
     arrowOne = document.getElementById("arrowOne");
@@ -654,6 +654,10 @@
     arrowTwentyOne.style.display ="inline-block";
     arrowTwentyTwo.style.display ="none";
 
+    button = document.getElementsByTagName("button").addEventListener("click", switchArrow)
+    upArrow = document.getElementsByClassName("fa-angle-up");
+    downArrow = document.getElementsByClassName("fa-angle-down");
+
     function switchArrow() {
 
     if (arrowOne.style.display === "inline-block") {
@@ -663,7 +667,16 @@
       arrowOne.style.display = "inline-block";
       arrowTwo.style.display = "none";
     }
-    
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
+
+  function switchArrow2() {
     if (arrowThree.style.display === "block") {
       arrowThree.style.display = "none";
       arrowFour.style.display = "block";
@@ -671,6 +684,16 @@
       arrowThree.style.display = "block";
       arrowFour.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
+
+  function switchArrow3() {
     if (arrowFive.style.display === "inline-block") {
       arrowFive.style.display = "none";
       arrowSix.style.display = "inline-block";
@@ -678,7 +701,16 @@
       arrowFive.style.display = "inline-block";
       arrowSix.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
+  function switchArrow4() {
     if (arrowSeven.style.display === "inline-block") {
       arrowSeven.style.display = "none";
       arrowEight.style.display = "inline-block";
@@ -687,6 +719,16 @@
       arrowEight.style.display = "none";
     }
 
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
+  
+  function switchArrow5() {
     if (arrowNine.style.display === "inline-block") {
       arrowNine.style.display = "none";
       arrowTen.style.display = "inline-block";
@@ -694,7 +736,16 @@
       arrowNine.style.display = "inline-block";
       arrowTen.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
+function switchArrow6() {
     if (arrowEleven.style.display === "inline-block") {
       arrowEleven.style.display = "none";
       arrowTwelve.style.display = "inline-block";
@@ -702,7 +753,9 @@
       arrowEleven.style.display = "inline-block";
       arrowTwelve.style.display = "none";
     }
+  }
 
+function switchArrow7() {
     if (arrowThirteen.style.display === "inline-block") {
       arrowThirteen.style.display = "none";
       arrowFourteen.style.display = "inline-block";
@@ -710,7 +763,16 @@
       arrowThirteen.style.display = "inline-block";
       arrowFourteen.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
+  function switchArrow8() {
     if (arrowFifteen.style.display === "inline-block") {
       arrowFifteen.style.display = "none";
       arrowSixteen.style.display = "inline-block";
@@ -718,15 +780,33 @@
       arrowFifteen.style.display = "inline-block";
       arrowSixteen.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
-    if (arrowSeventeen.style.display === "inline-block") {
+  function switchArrow9() {
+     if (arrowSeventeen.style.display === "inline-block") {
       arrowSeventeen.style.display = "none";
       arrowEighteen.style.display = "inline-block";
     } else if (arrowEighteen.style.display === "inline-block") {
       arrowSeventeen.style.display = "inline-block";
       arrowEighteen.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
+  function switchArrow10() {
     if (arrowNineteen.style.display === "inline-block") {
       arrowNineteen.style.display = "none";
       arrowTwenty.style.display = "inline-block";
@@ -734,13 +814,30 @@
       arrowNineteen.style.display = "inline-block";
       arrowTwenty.style.display = "none";
     }
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
+    }
+  }
 
+  function switchArrow11() {
     if (arrowTwentyOne.style.display === "inline-block") {
       arrowTwentyOne.style.display = "none";
       arrowTwentyTwo.style.display = "inline-block";
     } else if (arrowTwentyTwo.style.display === "inline-block") {
       arrowTwentyOne.style.display = "inline-block";
       arrowTwentyTwo.style.display = "none";
+    }
+
+    if (button.classList.contains("collapse")) {
+      upArrow.style.display = "none";
+      downArrow.style.display ="block";
+    } else {
+      upArrow.style.display = "block";
+      downArrow.style.display = "none";
     }
   }
 
