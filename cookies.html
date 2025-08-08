@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Joan&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?">
+<link rel="manifest" href="/site.webmanifest">
+    <meta content="Wedding and Background music String Quartet" name="Description">
+    <script src="https://kit.fontawesome.com/e02943c769.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_4qm5XOihPETG4jb0qW5UN');
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('service_wpnwhhc', 'template_l8z4k7c', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                      alert("Your enquiry has been sent.")
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                      alert("There has been an error.")
+                  });
+          });
+          return false;
+      }
+  </script>
+    <title>Carnaby Strings</title>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h1>CARNABY STRINGS</h1>
+        </div>
+      </div>
+
+<!-- Navbar -->
+      <div class="row sticky-top">
+        <div class="col-12 justify-content-center">
+          <nav class="navbar navbar-expand-lg">
+            <button
+              class="navbar-toggler mx-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="">MENU</span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >HOME<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#watch">WATCH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#reviews">REVIEWS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#repertoire">REPERTOIRE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#prices">PRICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End of navbar -->
+
+      <h3>Cookie policy</h3>
+<p>This cookie policy (&#8220;Policy&#8221;) describes what cookies are and how and they&#8217;re being used by the <a  href="https://carnabystrings.com">carnabystrings.com</a> website (&#8220;Website&#8221; or &#8220;Service&#8221;) and any of its related products and services (collectively, &#8220;Services&#8221;). This Policy is a legally binding agreement between you (&#8220;User&#8221;, &#8220;you&#8221; or &#8220;your&#8221;) and this Website operator (&#8220;Operator&#8221;, &#8220;we&#8221;, &#8220;us&#8221; or &#8220;our&#8221;). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms &#8220;User&#8221;, &#8220;you&#8221; or &#8220;your&#8221; shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services. You should read this Policy so you can understand the types of cookies we use, the information we collect using cookies and how that information is used. It also describes the choices available to you regarding accepting or declining the use of cookies.</p>
+<div class="wpembed-index"><h3>Table of contents</h3><ol class="wpembed-index"><li><a href="#what-are-cookies">What are cookies?</a></li><li><a href="#what-type-of-cookies-do-we-use">What type of cookies do we use?</a></li><li><a href="#what-are-your-cookie-options">What are your cookie options?</a></li><li><a href="#changes-and-amendments">Changes and amendments</a></li><li><a href="#acceptance-of-this-policy">Acceptance of this policy</a></li><li><a href="#contacting-us">Contacting us</a></li></ol></div><h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small pieces of data stored in text files that are saved on your computer or other devices when websites are loaded in a browser. They are widely used to remember you and your preferences, either for a single visit (through a &#8220;session cookie&#8221;) or for multiple repeat visits (using a &#8220;persistent cookie&#8221;).</p>
+<p>Session cookies are temporary cookies that are used during the course of your visit to the Website, and they expire when you close the web browser.</p>
+<p>Persistent cookies are used to remember your preferences within our Website and remain on your desktop or mobile device even after you close your browser or restart your computer. They ensure a consistent and efficient experience for you while visiting the Website and Services.</p>
+<p>Cookies may be set by the Website (&#8220;first-party cookies&#8221;), or by third parties, such as those who serve content or provide advertising or analytics services on the Website (&#8220;third party cookies&#8221;). These third parties can recognize you when you visit our website and also when you visit certain other websites.</p>
+<h2 id="what-type-of-cookies-do-we-use">What type of cookies do we use?</h2>
+<h3>Necessary cookies</h3>
+<p>Necessary cookies allow us to offer you the best possible experience when accessing and navigating through our Website and using its features. For example, these cookies let us recognize that you have created an account and have logged into that account to access the content.</p>
+<h3>Functionality cookies</h3>
+<p>Functionality cookies let us operate the Website and Services in accordance with the choices you make. For example, we will recognize your username and remember how you customized the Website and Services during future visits.</p>
+<h3>Social media cookies</h3>
+<p>Third party cookies from social media sites (such as Facebook, Twitter, etc) let us track social network users when they visit or use the Website and Services, or share content, by using a tagging mechanism provided by those social networks.</p>
+<p>These cookies are also used for event tracking and remarketing purposes. Any data collected with these tags will be used in accordance with our and social networks&#8217; privacy policies. We will not collect or share any personally identifiable information from the user.</p>
+<h2 id="what-are-your-cookie-options">What are your cookie options?</h2>
+<p>If you don&#8217;t like the idea of cookies or certain types of cookies, you can change your browser&#8217;s settings to delete cookies that have already been set and to not accept new cookies. Visit <a  href="https://www.internetcookies.com" target="_blank" ref="nofollow noreferrer noopener external">internetcookies.com</a> to learn more about how to do this.</p>
+<p>Please note, however, that if you delete cookies or do not accept them, you might not be able to use all of the features the Website and Services offer.</p>
+<h2 id="changes-and-amendments">Changes and amendments</h2>
+<p>We reserve the right to modify this Policy or its terms related to the Website and Services at any time at our discretion. When we do, we will revise the updated date at the bottom of this page. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided.</p>
+<p>An updated version of this Policy will be effective immediately upon the posting of the revised Policy unless otherwise specified. Your continued use of the Website and Services after the effective date of the revised Policy (or such other act specified at that time) will constitute your consent to those changes.</p>
+<h2 id="acceptance-of-this-policy">Acceptance of this policy</h2>
+<p>You acknowledge that you have read this Policy and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to access or use the Website and Services. This cookie policy was created with the help of <a href="https://www.websitepolicies.com" target="_blank" rel="nofollow">WebsitePolicies</a>.</p>
+<h2 id="contacting-us">Contacting us</h2>
+<p>If you have any questions, concerns, or complaints regarding this Policy or the use of cookies, we encourage you to contact us using the details below:</p>
+<p><a  href="https://carnabystrings.com">https://carnabystrings.com</a></p>
+<p>This document was last updated on October 3, 2022</p>
+<p class="madewith"><a href="https://www.websitepolicies.com/?via=madewithbadge" target="_blank" rel="nofollow"><img width="200" height="25" alt="Made with WebsitePolicies" src="https://cdn.websitepolicies.io/img/badge.png" srcset="https://cdn.websitepolicies.io/img/badge_2x.png 2x"></a></p>
+
+    <!-- Footer Section-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://m.facebook.com/carnabystrings" class="me-4 text-reset">
+          <i class="fab fa-facebook-f socials fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/carnabystrings/?hl=en" class="me-4 text-reset">
+          <i class="fab fa-instagram socials fa-lg"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-none d-lg-block">
+            <!-- Content -->
+            <img src="assets\carnaby-logo.png" alt="Carnaby Strings logo" id="footer-logo">
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="index.html#watch" class="text-reset footer-link">Watch</a>
+            </p>
+            <p>
+              <a href="index.html#repertoire" class="text-reset footer-link">Repertoire</a>
+            </p>
+            <p>
+              <a href="index.html#prices" class="text-reset footer-link">Prices</a>
+            </p>
+            <p>
+              <a href="index.html#reviews" class="text-reset footer-link">Reviews</a>
+            </p>
+            <p>
+              <a href="cookies.html" class="text-reset footer-link">Cookie Policy</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> London, UK</p>
+            <p><a class="footer-link" href="mailto:holly@carnabystrings.com"><i class="fas fa-envelope me-3"></i>
+              holly@carnabystrings.com</a>
+              
+            </p>
+            <p><a class="footer-link" href="tel:00447956318260"><i class="fas fa-phone me-3"></i> + 44 07956 318260</a></p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center pt-4 px-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold">Carnaby Strings</a>
+    </div>
+    <div class="text-center px-4 py-0" style="background-color: rgba(0, 0, 0, 0.05);">
+      <small>Website Design: Helen Goatly</small>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->

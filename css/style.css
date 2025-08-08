@@ -16,7 +16,7 @@ h1 {
   
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 8vw;
+  font-size: 7vw;
 
 }
 
@@ -260,9 +260,9 @@ th {
     padding-top: 0;
   }
 
-  /* h1 {
-    padding-top: 30px;
-  } */
+  h3 {
+    font-size: 20px;
+  }
 
   td {
     max-width: 5px !important;
@@ -296,6 +296,10 @@ th {
   .contact-image {
     width: 100%;
     border-radius: 0;
+  }
+
+  .menu {
+    color: #000;
   }
 
 }

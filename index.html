@@ -21,32 +21,8 @@
 <link rel="manifest" href="/site.webmanifest">
     <meta content="Wedding and Background music String Quartet" name="Description">
     <script src="https://kit.fontawesome.com/e02943c769.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/integration
-          emailjs.init('user_4qm5XOihPETG4jb0qW5UN');
-      })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // generate a five digit number for the contact_number variable
-              this.contact_number.value = Math.random() * 100000 | 0;
-              // these IDs from the previous steps
-              emailjs.sendForm('service_wpnwhhc', 'template_l8z4k7c', this)
-                  .then(function() {
-                      console.log('SUCCESS!');
-                      alert("Your enquiry has been sent.")
-                  }, function(error) {
-                      console.log('FAILED...', error);
-                      alert("There has been an error.")
-                  });
-          });
-          return false;
-      }
-  </script>
+    
+  <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"top","content":{"href":"https://carnabystrings.com/cookies.html"}})});</script>
     <title>Carnaby Strings</title>
   </head>
   <body>
@@ -70,7 +46,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="">MENU</span>
+              <span class="menu">MENU</span>
             </button>
 
             <div
@@ -130,16 +106,16 @@
         </div>
         
         <div class="col-12 pt-4 pt-md-5 pb-0 pb-md-5">
+          <p class="text-center" style="font-size: 20px;"><em>‘All of our guests loved their performance and it made the ceremony and reception really magical’</em></p>
           <p>
-            One of the finest and highly experienced string quartets in London, Carnaby Strings is the perfect choice for your wedding or corporate event. We are a stylish all female ensemble who perform with prestigious performers and ensembles including the Royal Opera House orchestra, Michael Buble, Bastille and the Royal Philharmonic Orchestra.
-            We have a huge repertoire of pop songs, as well playing classical music, Bollywood and jazz standards. There is an option to arrange any special song for your wedding if we don’t have it already, tailoring the music to your special occasion.            
+            A stylish and highly experienced string quartet based in London, Carnaby Strings is so much more than a classical string quartet. We have string quartet arrangements of all your favourite songs, from pop, rock, dance music to jazz. Of course we love playing all the classical favourites too! The four of us have been playing together since music college and are great friends, who love being part of your special day.
           </p>
         
           <p>
             We play regularly for weddings and events in venues such as; The Asylum Chapel, Hedsor House, Soho House, The Wallace Collection, Fitzrovia Chapel, and many of the top London hotels such as the Ritz, Grosvenor House and The Nomad Hotel just to name but a few.
           </p>
           <p>
-            We have built an excellent reputation for our skill and professionalism, being music graduates from Royal Academy of Music, Royal Northern College of Music and Trinity Laban. Other playing experience includes English National Opera Orchestra, BBC Concert Orchestra and West End shows such as Mary Poppins, Kinky Boots and most recently Hamilton and My Fair Lady. 
+            Outside of Carnaby Strings we perform with prestigious performers and ensembles including the Royal Opera House Orchestra, BBC Concert Orchestra, Michael Buble, Bastille and the Royal Philharmonic Orchestra. We play for West End shows too, most recently for Hamilton, Mary Poppins and My Fair Lady. We have built an excellent reputation for our skill and professionalism, being music graduates from Royal Academy of Music, Royal Northern College of Music and Trinity Laban. 
           </p>
         </div>
         <div class="row pb-5">
@@ -373,7 +349,7 @@
 
 <!-- Repertoire section -->
       
-      <div id="repertoire pt-md-5" class="row">
+      <div id="repertoire" class="row pt-md-5">
         <div class="col-12 justify-content-center pt-5 pt-md-0">
           <h3 class="text-center fs-xxxlarge">REPERTOIRE</h3>
         </div>
@@ -455,7 +431,7 @@
       <div id="prices-section">
       <div class="row my-5 align-items-center ">
         <div class="col-12 col-md-6 py-md-5 justify-content-center">
-          <p>Prices for our string quartet to play for your wedding or event start from £620 for a basic package. Prices vary depending on location and the amount of time you would like us to play for. 
+          <p>Prices for our string quartet to play for your wedding or event start from £620. Prices vary depending on location and the amount of time you would like us to play for. 
              Feel free to contact us for an exact quote or send us a DM on Instagram or Facebook. 
             </p>         
         </div>
@@ -485,15 +461,25 @@
           <p>
             Please fill out the contact form with your enquiry, and we'll get in touch as soon as possible.
           </p>
-          <form id="contact-form" name="contact-form">
-            <input type="hidden" name="contact_number">
-              <input type="text" name="user_name" id="name" required="" placeholder="Name" class="form-control mb-2">
-              <input type="email" name="user_email" id="email" class="form-control mb-2" placeholder="Email" required="">
-              <textarea name="message" id="enquiry" class="form-control" placeholder="Your enquiry" required="" rows="5"></textarea>
-              <div class="text-center">
-              <input type="submit" value="Send" class="mt-3 btn submit-btn">
-            </div>
-          </form>
+          
+          <div class="container">
+            <form target="_blank" action="https://formsubmit.co/0b95c3206a979d2705571e467e45ff6f" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Enquiry" class="form-control" name="enquiry" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block submit-btn">Submit Form</button>
+            </form>
+          </div>
         </div>
         <div class="col-12 d-block d-md-none">
           <div class="row justify-content-center">
@@ -561,6 +547,9 @@
           <p>
             <a href="#reviews" class="text-reset footer-link">Reviews</a>
           </p>
+          <p>
+            <a href="cookies.html" class="text-reset footer-link">Cookie Policy</a>
+          </p>
         </div>
         <!-- Grid column -->
 
@@ -586,7 +575,7 @@
 
   <!-- Copyright -->
   <div class="text-center pt-4 px-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright:
+    © <span id="year"></span> Copyright:
     <a class="text-reset fw-bold">Carnaby Strings</a>
   </div>
   <div class="text-center px-4 py-0" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -595,6 +584,10 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 <script>
     document.getElementById("video-one").addEventListener("click", switchArrow);
     document.getElementById("video-two").addEventListener("click", switchArrow2);
